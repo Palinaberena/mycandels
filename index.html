@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Handgjorda, paraffinfria stearinljus gjorda av kokosvax och sojavax. Lyxig doft som fyller rummet.">
+    <title>Lyxiga Handgjorda Ljus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#products">Våra Ljus</a></li>
+                <li><a href="#about">Om Oss</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Upptäck Lyxen av Naturliga Ljus</h1>
+            <p>Handgjorda, paraffinfria ljus som fyller ditt hem med lyxiga dofter.</p>
+            <button onclick="scrollToProducts()">Utforska Våra Ljus</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Våra Ljus</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="ljus1.jpg" alt="Lavendel & Vanilj Ljus">
+                <h3>Lavendel & Vanilj</h3>
+                <p>Kokosvax, brinntid: 50 timmar</p>
+                <p>Pris: 199 SEK</p>
+                <button class="add-to-cart">Lägg till i kundvagn</button>
+            </div>
+            <div class="product">
+                <img src="ljus2.jpg" alt="Citrus & Eucalyptus Ljus">
+                <h3>Citrus & Eucalyptus</h3>
+                <p>Soyavax, brinntid: 45 timmar</p>
+                <p>Pris: 179 SEK</p>
+                <button class="add-to-cart">Lägg till i kundvagn</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Om Oss</h2>
+        <p>Vi är passionerade om att skapa naturliga och hållbara ljus som inte bara doftar fantastiskt utan även är bra för miljön och hälsan. Alla våra ljus är handgjorda och fria från paraffin.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Kontakta Oss</h2>
+        <form id="contact-form">
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

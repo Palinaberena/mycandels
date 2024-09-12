@@ -1,0 +1,17 @@
+// Scroll to Products section when button is clicked
+function scrollToProducts() {
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Add event listeners to "add to cart" buttons
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+        alert('Produkten har lagts till i kundvagnen!');
+    });
+});
+
+// Handle form submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Tack för ditt meddelande! Vi återkommer till dig inom kort.');
+});
